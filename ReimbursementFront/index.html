@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reimbursement Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container" id="fullcontainer">
+        <div class="row" id="login-row">
+            <h3 class="col-lg-12">Please Enter Your Username and Password:</h3>
+            <input class="col-sm-4 form-control" id="username" type="text" placeholder="USERNAME">
+            <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
+            <button id="loginbtn" class="btn btn-success">Login</button>
+        </div>
+<br>
+<br>
+        <div class="row" id="table-row">
+            <table class="table-hover table-bordered" id="avtable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Amount</th>
+						<th>Type</th>
+						<th>Status</th>
+						<th>Description</th>
+                        <th>Author</th>
+                        <th>Resolver</th>
+                        <th>Time Submitted</th>
+                        <th>Time Resolved</th>
+                    </tr>
+                </thead>
+                <tbody id="reimbbody">
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <br>
+
+        <h3>Add Avenger to Database</h3>
+        <div class="row" id="formdiv">
+            <div class="col-4-sm">
+                <label class="label" for="supName">Superhero's Name</label>
+                <input type="text" class="form-control" id="supName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="supPower">Superhero's Power</label>
+                <input type="text" class="form-control" id="supPower">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="fName">Superhero's Real First Name</label>
+                <input type="text" class="form-control" id="fName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="lName">Superhero's Real Last Name</label>
+                <input type="text" class="form-control" id="lName">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="pLevel">Superhero's Power Level</label>
+                <input type="number" class="form-control" id="pLevel">
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="home">Superhero's Home Base Name</label>
+                <input type="text" class="form-control" id="home">
+            </div>
+        </div>
+        <div class="row" id="formbtn"></div>
+
+    </div>
+    
+    <script src="reimbursement.js"></script>
+</body>
+</html>

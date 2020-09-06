@@ -24,6 +24,24 @@ public class ReimbController {
 	private static UserService us= new UserService();
 
 	
+	public void getReimbursement(HttpServletResponse res, int id) throws IOException {
+		Reimbursement reimb = rs.findById(id);
+		if(reimb == null) {
+			res.setStatus(204);
+		} else {
+			res.setStatus(200);
+			String json = om.writeValueAsString(reimb);
+			res.getWriter().println(json);
+		}
+		
+	}
+	public void getAllReimbursements(HttpServletResponse res) throws IOException {
+		List<Reimbursement> allReimb=  rs.findAll();
+		res.setStatus(200);
+		String json=om.writeValueAsString(allReimb);
+		res.getWriter().println(json);	
+	}
+	
 	public void getAllReimbursementsByAuthor(HttpServletResponse res, int id) throws IOException {
 		User u=us.findById(id);
 		List<Reimbursement> allReimb= rs.findByUser(u);
@@ -34,17 +52,8 @@ public class ReimbController {
 			res.setStatus(200);
 			String json = om.writeValueAsString(allReimb);
 			res.getWriter().println(json);
-			
 		}
 	
-	}
-
-	public void getAllReimbursements(HttpServletResponse res) throws IOException {
-		List<Reimbursement> allReimb=  rs.findAll();
-		res.setStatus(200);
-		String json=om.writeValueAsString(allReimb);
-		res.getWriter().println(json);
-		
 	}
 
 	public void updateStatus(HttpServletRequest req, HttpServletResponse res) throws IOException {
@@ -59,7 +68,6 @@ public class ReimbController {
 		String body = new String(s);
 		ReimbursementDTO rdto= om.readValue(body, ReimbursementDTO.class);
 		System.out.println("body that is taken in from java: "+ rdto);
-		
 		
 		int reimbId= rdto.getId();
 		Reimbursement r = rs.findById(reimbId);
@@ -127,7 +135,6 @@ public class ReimbController {
 //			rt=rs.findByType(ReimbursementType.OTHER);
 //		}
 		
-		//create new reimbursement with constructor
 		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);
 		System.out.println(addedReimb);
 
@@ -151,8 +158,19 @@ public class ReimbController {
 			res.setStatus(200);
 			String json = om.writeValueAsString(allReimb);
 			res.getWriter().println(json);
-			
 		}
 	}
+	public void getAllReimbursementsByType(HttpServletResponse res, ReimbursementType type) throws IOException {
+		List<Reimbursement> allReimb = rs.findByType(type);
+		
+		if(allReimb.isEmpty()) {
+			res.setStatus(204);
+		}else {
+			res.setStatus(200);
+			String json = om.writeValueAsString(allReimb);
+			res.getWriter().println(json);
+		}
+	}
+
 
 }

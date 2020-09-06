@@ -17,15 +17,15 @@ public class Driver {
 	public static ReimbursementDAO rDao = new ReimbursementDAO();
 
 	public static void main(String[] args) {
-//	
-//		insertValues();
-//		
-//		List<User> users = userDao.findAll();
-//		
-//		for(User u : users) {
-//			System.out.println(u);
-//		}
-//		
+	
+		insertValues();
+		
+		List<User> users = userDao.findAll();
+		
+		for(User u : users) {
+			System.out.println(u);
+		}
+		
 		
 		//User u= userDao.findByUsername("mom");
 		//User u= userDao.findByUserID(2);
