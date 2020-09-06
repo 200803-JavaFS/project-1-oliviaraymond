@@ -10,13 +10,13 @@
 		<property name="hibernate.connection.password">password</property> 
 		<property name="hibernate.connection.url">jdbc:postgresql://javafs200803.ceaalsuzinzr.us-east-2.rds.amazonaws.com:5432/project1</property>
 		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
- 		<property name="hibernate.default_schema">hibernate</property>
+ 		<!-- <property name="hibernate.default_schema">hibernate</property> --> 
 
 		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 		<property name="hibernate.show_sql">true</property> 
 		<!-- true is useful in development but probably not production -->
 		<property name="hibernate.format_sql">true</property>
-		<property name="hibernate.hdm2ddl.auto">update</property> 
+		<property name="hibernate.hbm2ddl.auto">update</property> 
 		<!-- create, update, validate -->
 		
 	

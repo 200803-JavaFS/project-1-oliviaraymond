@@ -17,6 +17,8 @@ public class ReimbursementService {
 	private static final Logger log = LogManager.getLogger(ReimbursementService.class);
 	private static IReimbursementDAO rDao= new ReimbursementDAO();
 	
+	//use format specifiers for better logging messages
+	
 	public List<Reimbursement> findAll(){
 		log.info("Retrieving all reimbursements");
 		return rDao.findAll();
@@ -47,7 +49,12 @@ public class ReimbursementService {
 		return rDao.updateReimbursement(r);
 	}
 	public List<Reimbursement> findByType(ReimbursementType type) {
-		log.info("Finding ReimbStatus with status: "+ type);
+		log.info("Finding Reimbs with types: "+ type);
 		return rDao.findReimbursementsByType(type);
 	}
+	public boolean deleteReimbursement(int id) {
+		log.info("Deleting reimbursements: "+ id);
+		return rDao.deleteReimbursement(id);
+	}
+	
 }

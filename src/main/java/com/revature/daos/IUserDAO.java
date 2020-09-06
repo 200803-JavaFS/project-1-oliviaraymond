@@ -25,4 +25,6 @@ public interface IUserDAO {
 	
 	public User findByUserRole(UserType userType);
 
+	User findByUserRole(String userType);
+
 }

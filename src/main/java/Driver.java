@@ -1,5 +1,6 @@
 
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import com.revature.daos.ReimbursementDAO;
@@ -16,41 +17,81 @@ public class Driver {
 	public static ReimbursementDAO rDao = new ReimbursementDAO();
 
 	public static void main(String[] args) {
-	
-		insertValues();
-		
+//	
+//		insertValues();
+//		
 //		List<User> users = userDao.findAll();
 //		
-//		for(User m : users) {
-//			System.out.println(m);
+//		for(User u : users) {
+//			System.out.println(u);
 //		}
-//	
-
+//		
+		
+		//User u= userDao.findByUsername("mom");
+		//User u= userDao.findByUserID(2);
+		//User u= userDao.findByCredentials("mom", "target");
+		
+		//not working
+		//User u= userDao.findByUserRole("EMPLOYEE");
+		
+		//not working
+//		Boolean u = userDao.deleteUser(2); 
+//		
+//		List<User> users2 = userDao.findAll();
+//		
+//		for(User u1 : users2) {
+//			System.out.println(u1);
+//		}
+		
+//		System.out.println(u.getPassword());
+//		System.out.println(u.getFirstName());
+		
+//	List<Reimbursement> reimbs = rDao.findAll();
+//		
+//		for(Reimbursement r : reimbs) {
+//			System.out.println(r);
+//		}
+//		User u= userDao.findByUsername("livray");
+//		List<Reimbursement> r= rDao.findReimbursementsByUser(u);
+//		for(Reimbursement r1 : r) {
+//			System.out.println(r1);
+//		}
+//		User user = userDao.findByUserID(2);
+//		user.setEmail("mom.gmail");
+//		userDao.updateUser(user);
+//		Reimbursement reimb = rDao.findByReimID(2);
+//		reimb.setReimbAmount(3);
+//		rDao.updateReimbursement(reimb);
+//		User user = userDao.findByUserRole(UserType.EMPLOYEE);
+//		System.out.println(user);
+//		User user = userDao.findByUserID(6);
+//		List<Reimbursement> reimb = rDao.findReimbursementByStatus(ReimbursementStatus.APPROVED);
+//		System.out.println(reimb);
+//		
 	}
 	
 	public static void insertValues() {
-		User user1= new User("livray", "soccer", "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE, null, null);
-//		Director dir1 = new Director("Christopher", "Nolen", null);
-//		Director dir2 = new Director("Steven", "Speilburgh", null);
-//		Director dir3 = new Director("Wes", "Anderson", null);
-//		dirDao.insert(dir1);
-//		dirDao.insert(dir2);
-//		dirDao.insert(dir3);
-		userDao.addUser(user1);
+//		User user1= new User("livray", "soccer", "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
+//		User user2= new User("mom", "target", "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);
+//				
+//		userDao.addUser(user1);
+//		userDao.addUser(user2);
 //		
-//		Movie m1 = new Movie("Jurassic Park", "Don't feed the lizards", dir2);
-//		Movie m2 = new Movie("Dark Knight Rise", "I mean DC is trying right?", dir1);
-//		Movie m3 = new Movie("Moon Rise Kingdom", "I have no idea", dir3);
-//		Movie m4 = new Movie("ET", "Always be nice to strangers", dir2);
-//		mDao.insert(m1);
-//		mDao.insert(m2);
-//		mDao.insert(m3);
-//		mDao.insert(m4);
+//		Reimbursement reimb1 = new Reimbursement(30.00, new Timestamp(System.currentTimeMillis()), null, "mowed the lawn", user1, user2, ReimbursementStatus.APPROVED, ReimbursementType.OTHER);
+//		rDao.addReimbursement(reimb1);
 //		
-//		Character c1 = new Character("T-Rex", "female", "hunger");
-//		Character c2 = new Character("Batman", "male", "justice");
-//		charDao.insert(c1);
-//		charDao.insert(c2);
+//		
+//		userDao.updateUser(user1);
+//		
+//		User user3= new User("dad", "google", "Rob", "Raymond", "raymond@gmail.com", UserType.FINANCIAL_MANAGER);
+//		userDao.addUser(user3);
+		//userDao.deleteUser(3);
+		//rDao.deleteReimbursement(1);
+		//System.out.println("deleting");
+		
+		//rDao.deleteReimbursement(1);
+	
+		
 	}
 
 }

@@ -48,7 +48,7 @@ public class ReimbursementDAO implements IReimbursementDAO {
 			return true;
 		} catch(HibernateException e) {
 			e.printStackTrace();
-			tx.rollback();
+			tx.rollback(); //vs. commit?
 			return false;
 		}
 		
@@ -57,14 +57,14 @@ public class ReimbursementDAO implements IReimbursementDAO {
 	@Override
 	public List<Reimbursement> findReimbursementsByUser(User u) {
 		Session ses=HibernateUtil.getSession();
-		List<Reimbursement> reimbList = ses.createQuery("FROM Reimbursement WHERE reimbAuthor ="+u.getUserId()+"'", Reimbursement.class).list();
+		List<Reimbursement> reimbList = ses.createQuery("FROM Reimbursement WHERE reimbAuthor ='"+u.getUserId()+"'", Reimbursement.class).list();
 		return reimbList;
 	}
 
 	@Override
 	public List<Reimbursement> findReimbursementsByType(ReimbursementType type) {
 		Session ses=HibernateUtil.getSession();
-		List<Reimbursement> reimb = ses.createQuery("FROM Reimbursement WHERE reimbStatus="+type, Reimbursement.class).list();
+		List<Reimbursement> reimb = ses.createQuery("FROM Reimbursement WHERE reimbType='"+type+"'", Reimbursement.class).list();
 		return reimb;
 	}
 
@@ -77,22 +77,24 @@ public class ReimbursementDAO implements IReimbursementDAO {
 	@Override
 	public List<Reimbursement> findReimbursementByStatus(ReimbursementStatus status) {
 		Session ses=HibernateUtil.getSession();
-		List<Reimbursement> reimb = ses.createQuery("FROM Reimbursement WHERE reimbStatus="+status, Reimbursement.class).list();
+		List<Reimbursement> reimb = ses.createQuery("FROM Reimbursement WHERE reimbStatus='"+status +"'", Reimbursement.class).list();
 		return reimb;
 	}
 
 	@Override
 	public boolean deleteReimbursement(int id) {
 		Session ses = HibernateUtil.getSession();
+		Transaction tx = ses.beginTransaction();
 
 		try {
-			ses.createQuery("DELETE FROM Reimbursement WHERE reimbID =" + id);
+			ses.delete(findByReimID(id));
+			tx.commit();
 			return true;
 		} catch (HibernateException e) {
 			e.printStackTrace();
+			tx.rollback();
 			return false;
 		}
 	}
-
 
 }

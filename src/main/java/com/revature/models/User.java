@@ -38,12 +38,13 @@ public class User implements Serializable {
 	private String email;
 	
 	@Enumerated(EnumType.STRING)
+	@Column(name="user_type", nullable=false)
 	private UserType userType;
 	
-//	@OneToMany(mappedBy="reimbAuthor", fetch=FetchType.LAZY)
+//	@OneToMany(mappedBy="reimb_author", fetch=FetchType.LAZY)
 //	private List<Reimbursement> reimbAuthorList;
 //	
-//	@OneToMany(mappedBy="reimbResolver", fetch=FetchType.EAGER)
+//	@OneToMany(mappedBy="reimb_resolver", fetch=FetchType.EAGER)
 //	private List<Reimbursement> reimbResolverList;
 
 	public User() {
@@ -64,8 +65,7 @@ public class User implements Serializable {
 //		this.reimbResolverList = reimbResolverList;
 	}
 
-	public User(String username, String password, String firstName, String lastName, String email, UserType userType,
-			List<Reimbursement> reimbAuthorList, List<Reimbursement> reimbResolverList) {
+	public User(String username, String password, String firstName, String lastName, String email, UserType userType) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -132,7 +132,7 @@ public class User implements Serializable {
 	public void setUserType(UserType userType) {
 		this.userType = userType;
 	}
-//
+
 //	public List<Reimbursement> getReimbAuthorList() {
 //		return reimbAuthorList;
 //	}
@@ -140,7 +140,7 @@ public class User implements Serializable {
 //	public void setReimbAuthorList(List<Reimbursement> reimbAuthorList) {
 //		this.reimbAuthorList = reimbAuthorList;
 //	}
-
+//
 //	public List<Reimbursement> getReimbResolverList() {
 //		return reimbResolverList;
 //	}
@@ -219,21 +219,11 @@ public class User implements Serializable {
 	@Override
 	public String toString() {
 		return "User [userId=" + userId + ", username=" + username + ", password=" + password + ", firstName="
-				+ firstName + ", lastName=" + lastName + ", email=" + email + ", userType=" + userType
-				+ ", reimbAuthorList=" + ", reimbResolverList=" + "]";
+				+ firstName + ", lastName=" + lastName + ", email=" + email + ", userType=" + userType + "]";
 	}
 
-//	public User(int userId, String username, String password, String firstName, String lastName, String email,
-//			UserType userType) {
-//		super();
-//		this.userId = userId;
-//		this.username = username;
-//		this.password = password;
-//		this.firstName = firstName;
-//		this.lastName = lastName;
-//		this.email = email;
-//		this.userType = userType;
-//	}
 
+
+	
 	
 }

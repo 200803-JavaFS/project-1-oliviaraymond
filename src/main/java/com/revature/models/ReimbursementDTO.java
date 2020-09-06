@@ -6,11 +6,11 @@ import com.revature.models.Reimbursement.ReimbursementType;
 public class ReimbursementDTO {
 	public int id;
 	public ReimbursementStatus status;
+	public ReimbursementType type;
 	public int authorId;
-
 	public double amount;
 	public String description;
-	public ReimbursementType type;
+	
 
 	public ReimbursementDTO() {
 		super();
