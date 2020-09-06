@@ -57,3 +57,9 @@
 2020-09-05 21:55:21 INFO  UserService:36 - Finding User with username: mom
 2020-09-05 21:55:28 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
 2020-09-05 21:55:28 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 22:59:25 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:04:43 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:04:53 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:06:26 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:07:10 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:08:10 INFO  ReimbursementService:23 - Retrieving all reimbursements
