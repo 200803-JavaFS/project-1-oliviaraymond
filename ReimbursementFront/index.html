@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reimbursement Application</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet2" href= "stylesheet.css">
 </head>
 <body>
     <div class="container" id="fullcontainer">
@@ -17,7 +18,7 @@
 <br>
 <br>
         <div class="row" id="table-row">
-            <table class="table-hover table-bordered" id="avtable">
+            <table class="table-hover table-bordered" id="reimbtable">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -39,32 +40,29 @@
         <br>
         <br>
 
-        <h3>Add Avenger to Database</h3>
+        <h3>Create a new Reimbursement</h3>
         <div class="row" id="formdiv">
             <div class="col-4-sm">
-                <label class="label" for="supName">Superhero's Name</label>
-                <input type="text" class="form-control" id="supName">
+                <label class="label" for="reimbAmount">Amount</label>
+                <input type="number" class="form-control" id="reimbAmount">
             </div>
             <div class="col-4-sm">
-                <label class="label" for="supPower">Superhero's Power</label>
-                <input type="text" class="form-control" id="supPower">
-            </div>
-            <div class="col-4-sm">
-                <label class="label" for="fName">Superhero's Real First Name</label>
-                <input type="text" class="form-control" id="fName">
-            </div>
-            <div class="col-4-sm">
-                <label class="label" for="lName">Superhero's Real Last Name</label>
-                <input type="text" class="form-control" id="lName">
-            </div>
-            <div class="col-4-sm">
-                <label class="label" for="pLevel">Superhero's Power Level</label>
-                <input type="number" class="form-control" id="pLevel">
-            </div>
-            <div class="col-4-sm">
-                <label class="label" for="home">Superhero's Home Base Name</label>
-                <input type="text" class="form-control" id="home">
-            </div>
+                <label class="label" for="reimbType">Type</label>
+				<select name="reimbType" id="reimbType" class="form-control"> 
+					<option value="LODGING">LODGING</option>
+					<option value="TRAVEL">TRAVEL</option>
+					<option value="FOOD">FOOD</option>
+					<option value="OTHER">OTHER</option>
+				</select>
+			</div>
+			<div class="col-4-sm">
+                <label class="label" for="reimbDescription">Description</label>
+                <input type="text" class="form-control" id="reimbDescription">
+			</div>
+			<div class="col-4-sm">
+                <label class="label" for="authorUserName">Your Username</label>
+                <input type="text" class="form-control" id="authorUserName">
+			</div>
         </div>
         <div class="row" id="formbtn"></div>
 

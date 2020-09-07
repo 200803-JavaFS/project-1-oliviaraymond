@@ -63,3 +63,164 @@
 2020-09-05 23:06:26 INFO  ReimbursementService:23 - Retrieving all reimbursements
 2020-09-05 23:07:10 INFO  ReimbursementService:23 - Retrieving all reimbursements
 2020-09-05 23:08:10 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:12:10 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:12:18 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-05 23:12:18 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:49 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:57 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-05 23:15:57 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:58 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:58 INFO  UserService:26 - Finding User with id 15
+2020-09-05 23:15:58 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:58 INFO  UserService:36 - Finding User with username: henry
+2020-09-05 23:15:58 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:58 INFO  UserService:26 - Finding User with id 15
+2020-09-05 23:15:58 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:58 INFO  ReimbursementService:38 - Finding ReimbStatus with status: APPROVED
+2020-09-05 23:15:59 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:59 INFO  ReimbursementService:43 - Adding reimbursements: Reimbursement [reimbID=0, reimbAmount=100.2, timeSubmitted=2020-09-05 23:15:59.183, timeResolved=null, reimbDescription=testDescription, reimbAuthor=User [userId=7, username=mom, password=target, firstName=Martha, lastName=Ames, email=ames@gmail.com, userType=FINANCIAL_MANAGER], reimbResolver=null, reimbStatus=PENDING, reimbType=OTHER]
+2020-09-05 23:15:59 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:59 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-05 23:15:59 INFO  UserService:36 - Finding User with username: mom
+2020-09-05 23:15:59 INFO  ReimbursementService:28 - Finding Reimbursement with id 1
+2020-09-05 23:16:00 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:28 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:39 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-06 15:16:39 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:39 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:39 INFO  UserService:26 - Finding User with id 15
+2020-09-06 15:16:39 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:40 INFO  UserService:36 - Finding User with username: henry
+2020-09-06 15:16:40 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:40 INFO  UserService:26 - Finding User with id 15
+2020-09-06 15:16:40 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:40 INFO  ReimbursementService:38 - Finding ReimbStatus with status: APPROVED
+2020-09-06 15:16:40 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:40 INFO  ReimbursementService:43 - Adding reimbursements: Reimbursement [reimbID=0, reimbAmount=100.2, timeSubmitted=2020-09-06 15:16:40.669, timeResolved=null, reimbDescription=testDescription, reimbAuthor=User [userId=7, username=mom, password=target, firstName=Martha, lastName=Ames, email=ames@gmail.com, userType=FINANCIAL_MANAGER], reimbResolver=null, reimbStatus=PENDING, reimbType=OTHER]
+2020-09-06 15:16:40 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:41 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:16:41 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:16:41 INFO  ReimbursementService:28 - Finding Reimbursement with id 1
+2020-09-06 15:16:41 INFO  UserService:36 - Finding User with username: mom
+2020-09-06 15:23:08 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:29:06 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:32:55 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:32:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:36:35 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:36:35 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:37:38 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:37:38 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:38:33 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:38:33 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:40:53 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:40:53 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:40:54 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:40:54 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:40:54 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:40:54 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:40:55 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:40:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:43:41 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:43:41 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:43:48 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:43:48 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:43:52 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:43:52 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:45:37 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:45:37 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:46:23 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:46:23 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:49:07 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:49:07 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:49:14 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:49:14 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:55:19 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:55:19 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 15:56:52 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 15:56:52 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 16:01:49 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 16:01:49 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 16:01:58 INFO  ReimbursementService:23 - Retrieving all reimbursements
+2020-09-06 16:01:58 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 17:46:27 INFO  ReimbursementService:27 - Retrieving all reimbursements
+2020-09-06 17:46:27 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 17:46:50 INFO  ReimbursementService:27 - Retrieving all reimbursements
+2020-09-06 17:46:50 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 17:49:01 INFO  ReimbursementService:27 - Retrieving all reimbursements
+2020-09-06 17:49:01 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:02:21 INFO  ReimbursementService:27 - Retrieving all reimbursements
+2020-09-06 18:02:21 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:02:38 INFO  ReimbursementService:47 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=1.0, timeSubmitted=null, timeResolved=null, reimbDescription=IDK, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-06 18:05:10 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:05:10 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:05:26 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=1.0, timeSubmitted=null, timeResolved=null, reimbDescription=bc, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-06 18:05:27 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:05:27 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:05:59 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=1.0, timeSubmitted=null, timeResolved=null, reimbDescription=bc, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-06 18:06:00 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:06:00 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:06:46 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=1.0, timeSubmitted=null, timeResolved=null, reimbDescription=bc, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-06 18:06:47 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:06:47 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:06:56 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:06:56 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:07:04 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=1.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-06 18:07:04 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:07:04 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:10:54 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:10:54 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:12:50 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:12:50 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:14:36 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:14:36 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:15:51 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:15:51 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:16:01 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:16:01 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:16:11 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:16:11 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:20:15 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:20:15 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:24:16 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:24:16 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:24:31 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:24:31 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:24:32 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:24:32 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:24:39 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:24:39 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:25:31 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=4.0, timeSubmitted=null, timeResolved=null, reimbDescription=travelingg, authorUserName=livray, resolverUserName=null, reimbStatus=null, reimbType=TRAVEL]
+2020-09-06 18:25:31 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:25:31 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:27:51 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:27:51 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:28:41 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:28:41 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:28:42 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:28:42 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:28:50 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:28:50 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:34:12 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:34:12 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:43:37 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:43:37 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:45:04 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:45:04 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:54:03 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:54:03 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 18:59:02 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 18:59:02 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:09:52 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:09:52 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:11:24 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:11:24 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:12:43 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:12:43 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:12:51 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=6.0, timeSubmitted=null, timeResolved=null, reimbDescription=6, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=LODGING]
+2020-09-06 19:12:51 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:12:51 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:16:46 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:16:46 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:16:55 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=3.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=FOOD]
+2020-09-06 19:16:55 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:16:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements

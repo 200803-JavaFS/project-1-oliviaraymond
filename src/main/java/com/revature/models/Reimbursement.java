@@ -10,20 +10,14 @@ import javax.persistence.*;
 public class Reimbursement implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
-	public enum ReimbursementStatus {
-		  PENDING,
-		  APPROVED,
-		  DENIED;
 
-		}
-	
+	public enum ReimbursementStatus {
+		PENDING, APPROVED, DENIED;
+	}
+
 	public enum ReimbursementType {
-	        LODGING,
-	        TRAVEL,
-	        FOOD,
-	        OTHER
-	        }
+		LODGING, TRAVEL, FOOD, OTHER
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,25 +37,23 @@ public class Reimbursement implements Serializable {
 	private String reimbDescription;
 
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	//EAGER vs LAZY ??
+	// EAGER vs LAZY ??
 	@JoinColumn(name = "reimb_author", nullable = false)
 	private User reimbAuthor;
 
 	@ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	@JoinColumn(name = "reimb_resolver")
 	private User reimbResolver;
-	
+
 	@Enumerated(EnumType.STRING)
 	private ReimbursementStatus reimbStatus;
-	
+
 	@Enumerated(EnumType.STRING)
 	private ReimbursementType reimbType;
-	
 
 	public Reimbursement() {
 		super();
 	}
-
 
 	public Reimbursement(int reimbID, double reimbAmount, Timestamp timeSubmitted, Timestamp timeResolved,
 			String reimbDescription, User reimbAuthor, User reimbResolver, ReimbursementStatus reimbStatus,
@@ -78,7 +70,6 @@ public class Reimbursement implements Serializable {
 		this.reimbType = reimbType;
 	}
 
-
 	public Reimbursement(double reimbAmount, Timestamp timeSubmitted, Timestamp timeResolved, String reimbDescription,
 			User reimbAuthor, User reimbResolver, ReimbursementStatus reimbStatus, ReimbursementType reimbType) {
 		super();
@@ -92,96 +83,77 @@ public class Reimbursement implements Serializable {
 		this.reimbType = reimbType;
 	}
 
-
 	public int getReimbID() {
 		return reimbID;
 	}
-
 
 	public void setReimbID(int reimbID) {
 		this.reimbID = reimbID;
 	}
 
-
 	public double getReimbAmount() {
 		return reimbAmount;
 	}
-
 
 	public void setReimbAmount(double reimbAmount) {
 		this.reimbAmount = reimbAmount;
 	}
 
-
 	public Timestamp getTimeSubmitted() {
 		return timeSubmitted;
 	}
-
 
 	public void setTimeSubmitted(Timestamp timeSubmitted) {
 		this.timeSubmitted = timeSubmitted;
 	}
 
-
 	public Timestamp getTimeResolved() {
 		return timeResolved;
 	}
-
 
 	public void setTimeResolved(Timestamp timestamp) {
 		this.timeResolved = timestamp;
 	}
 
-
 	public String getReimbDescription() {
 		return reimbDescription;
 	}
-
 
 	public void setReimbDescription(String reimbDescription) {
 		this.reimbDescription = reimbDescription;
 	}
 
-
 	public User getReimbAuthor() {
 		return reimbAuthor;
 	}
-
 
 	public void setReimbAuthor(User reimbAuthor) {
 		this.reimbAuthor = reimbAuthor;
 	}
 
-
 	public User getReimbResolver() {
 		return reimbResolver;
 	}
-
 
 	public void setReimbResolver(User reimbResolver) {
 		this.reimbResolver = reimbResolver;
 	}
 
-
 	public ReimbursementStatus getReimbStatus() {
 		return reimbStatus;
 	}
-
 
 	public void setReimbStatus(ReimbursementStatus reimbStatus) {
 		this.reimbStatus = reimbStatus;
 	}
 
-
 	public ReimbursementType getReimbType() {
 		return reimbType;
 	}
 
-
 	public void setReimbType(ReimbursementType reimbType) {
 		this.reimbType = reimbType;
 	}
-
 
 	@Override
 	public int hashCode() {
@@ -200,7 +172,6 @@ public class Reimbursement implements Serializable {
 		result = prime * result + ((timeSubmitted == null) ? 0 : timeSubmitted.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -247,7 +218,6 @@ public class Reimbursement implements Serializable {
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Reimbursement [reimbID=" + reimbID + ", reimbAmount=" + reimbAmount + ", timeSubmitted=" + timeSubmitted
@@ -256,7 +226,4 @@ public class Reimbursement implements Serializable {
 				+ reimbType + "]";
 	}
 
-	
 }
-
-	

@@ -36,7 +36,7 @@ public class MasterServlet extends HttpServlet{
 		// servlet method.
 		// Because all requests will hit this method, we are defaulting to not found and
 		// will override for success requests.
-		// res.setStatus(404);
+		res.setStatus(404);
 
 		final String URI = req.getRequestURI().replace("/project0/", "");
 

@@ -2,6 +2,8 @@ package com.revature.daos;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -10,14 +12,18 @@ import org.hibernate.query.Query;
 import com.revature.models.Reimbursement;
 import com.revature.models.Reimbursement.ReimbursementStatus;
 import com.revature.models.Reimbursement.ReimbursementType;
+import com.revature.services.ReimbursementService;
 import com.revature.models.User;
 import com.revature.utils.HibernateUtil;
 
 public class ReimbursementDAO implements IReimbursementDAO {
+	
+	private static final Logger log = LogManager.getLogger(ReimbursementDAO.class);
 
 	@Override
 	public List<Reimbursement> findAll() {
 		Session ses = HibernateUtil.getSession();
+		log.info("Retrieving all reimbursements");
 		List<Reimbursement> list = ses.createQuery("FROM Reimbursement").list();
 		return list;
 	}
