@@ -364,3 +364,56 @@
 2020-09-07 17:12:18 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
 2020-09-07 17:12:31 INFO  ReimbursementService:29 - Retrieving all reimbursements
 2020-09-07 17:12:31 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:18:34 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:18:34 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:18:47 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:18:47 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:20:09 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:20:09 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:20:26 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:20:26 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:21:21 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:21:21 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:21:36 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:21:36 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:23:29 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:23:29 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:23:37 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 17:23:37 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 17:23:37 INFO  ReimbursementService:56 - Updating reimbursement: Reimbursement [reimbID=1, reimbAmount=30.0, timeSubmitted=2020-09-07 15:43:44.884, timeResolved=2020-09-07 17:23:37.281, reimbDescription=mowed the lawn, reimbAuthor=User [userId=1, username=livray, password=DA443A0AD979D5530DF38CA1A74E4F80, firstName=Olivia, lastName=Raymond, email=livray@gmail.com, userType=EMPLOYEE], reimbResolver=User [userId=2, username=mom, password=42AEFBAE01D2DFD981F7DA7D823D689E, firstName=Martha, lastName=Ames, email=ames@gmail.com, userType=FINANCIAL_MANAGER], reimbStatus=DENIED, reimbType=OTHER]
+2020-09-07 17:23:37 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:23:37 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:24:06 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 17:24:06 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 17:24:06 INFO  ReimbursementService:56 - Updating reimbursement: Reimbursement [reimbID=1, reimbAmount=30.0, timeSubmitted=2020-09-07 15:43:44.884, timeResolved=2020-09-07 17:24:06.399, reimbDescription=mowed the lawn, reimbAuthor=User [userId=1, username=livray, password=DA443A0AD979D5530DF38CA1A74E4F80, firstName=Olivia, lastName=Raymond, email=livray@gmail.com, userType=EMPLOYEE], reimbResolver=User [userId=2, username=mom, password=42AEFBAE01D2DFD981F7DA7D823D689E, firstName=Martha, lastName=Ames, email=ames@gmail.com, userType=FINANCIAL_MANAGER], reimbStatus=APPROVED, reimbType=OTHER]
+2020-09-07 17:24:06 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:24:06 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:24:40 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:25:07 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=5000.0, timeSubmitted=null, timeResolved=null, reimbDescription=you owe me, authorUserName=livray, resolverUserName=null, reimbStatus=null, reimbType=TRAVEL]
+2020-09-07 17:25:07 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:25:43 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:25:43 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:25:51 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 17:25:59 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 17:26:14 INFO  ReimbursementService:34 - Finding Reimbursement with id 2
+2020-09-07 17:26:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 17:26:15 INFO  ReimbursementService:56 - Updating reimbursement: Reimbursement [reimbID=2, reimbAmount=5000.0, timeSubmitted=2020-09-07 17:25:07.662, timeResolved=2020-09-07 17:26:14.999, reimbDescription=you owe me, reimbAuthor=User [userId=1, username=livray, password=DA443A0AD979D5530DF38CA1A74E4F80, firstName=Olivia, lastName=Raymond, email=livray@gmail.com, userType=EMPLOYEE], reimbResolver=User [userId=2, username=mom, password=42AEFBAE01D2DFD981F7DA7D823D689E, firstName=Martha, lastName=Ames, email=ames@gmail.com, userType=FINANCIAL_MANAGER], reimbStatus=DENIED, reimbType=TRAVEL]
+2020-09-07 17:26:15 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:26:15 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:29:54 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:29:54 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:30:06 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:30:06 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:30:19 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:30:42 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:30:42 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:32:06 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:32:16 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:32:16 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:34:54 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:35:12 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:35:12 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:36:55 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:36:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:37:00 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:37:08 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
