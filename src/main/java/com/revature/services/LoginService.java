@@ -9,8 +9,7 @@ public class LoginService {
 	private static UserDAO udao = new UserDAO();
 
 	public boolean login(LoginDTO login) {
-
-
+		
 		User u = udao.findByUsername(login.username);
 		return (u != null && login.password.equals((u.getPassword())));
 	}

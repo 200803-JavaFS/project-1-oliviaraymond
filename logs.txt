@@ -304,3 +304,13 @@
 2020-09-07 01:00:36 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
 2020-09-07 01:14:13 INFO  ReimbursementService:29 - Retrieving all reimbursements
 2020-09-07 01:14:13 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:27:52 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:27:52 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:28:04 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:28:04 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:37:50 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:37:50 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:38:56 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 01:38:59 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 01:39:08 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 14:20:32 INFO  UserService:31 - Finding User with username: mom and password: -880905839

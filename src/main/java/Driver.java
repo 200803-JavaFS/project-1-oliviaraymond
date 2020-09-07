@@ -1,7 +1,12 @@
 
-
 import java.sql.Timestamp;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.List;
+
+import javax.xml.bind.DatatypeConverter;
 
 import com.revature.daos.ReimbursementDAO;
 import com.revature.daos.UserDAO;
@@ -17,24 +22,23 @@ public class Driver {
 	public static ReimbursementDAO rDao = new ReimbursementDAO();
 
 	public static void main(String[] args) {
-	
+
 		insertValues();
-		
+
 		List<User> users = userDao.findAll();
-		
-		for(User u : users) {
+
+		for (User u : users) {
 			System.out.println(u);
 		}
-		
-		
-		//User u= userDao.findByUsername("mom");
-		//User u= userDao.findByUserID(2);
-		//User u= userDao.findByCredentials("mom", "target");
-		
-		//not working
-		//User u= userDao.findByUserRole("EMPLOYEE");
-		
-		//not working
+
+		// User u= userDao.findByUsername("mom");
+		// User u= userDao.findByUserID(2);
+		// User u= userDao.findByCredentials("mom", "target");
+
+		// not working
+		// User u= userDao.findByUserRole("EMPLOYEE");
+
+		// not working
 //		Boolean u = userDao.deleteUser(2); 
 //		
 //		List<User> users2 = userDao.findAll();
@@ -42,10 +46,10 @@ public class Driver {
 //		for(User u1 : users2) {
 //			System.out.println(u1);
 //		}
-		
+
 //		System.out.println(u.getPassword());
 //		System.out.println(u.getFirstName());
-		
+
 //	List<Reimbursement> reimbs = rDao.findAll();
 //		
 //		for(Reimbursement r : reimbs) {
@@ -69,10 +73,15 @@ public class Driver {
 //		System.out.println(reimb);
 //		
 	}
-	
+
 	public static void insertValues() {
-//		User user1= new User("livray", "soccer", "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
-//		User user2= new User("mom", "target", "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);
+		
+	
+		
+		User user1= new User("livray", hash("soccer"), "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
+		User user2= new User("mom", hash("target"), "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);
+		userDao.addUser(user1);
+		userDao.addUser(user2);
 //				
 //		userDao.addUser(user1);
 //		userDao.addUser(user2);
@@ -83,15 +92,30 @@ public class Driver {
 //		
 //		userDao.updateUser(user1);
 //		
-//		User user3= new User("dad", "google", "Rob", "Raymond", "raymond@gmail.com", UserType.FINANCIAL_MANAGER);
-//		userDao.addUser(user3);
-		//userDao.deleteUser(3);
-		//rDao.deleteReimbursement(1);
-		//System.out.println("deleting");
-		
-		//rDao.deleteReimbursement(1);
+//
+		User user3 = new User("dad", hash("google"), "Rob", "Raymond", "raymond@gmail.com", UserType.FINANCIAL_MANAGER);
+		userDao.addUser(user3);
+		// userDao.deleteUser(3);
+		// rDao.deleteReimbursement(1);
+		// System.out.println("deleting");
+
+		// rDao.deleteReimbursement(1);
 	
-		
+	}
+
+	private static String hash(String pass) {
+		try {
+			MessageDigest md;
+			md = MessageDigest.getInstance("MD5");
+
+			byte[] hashByte = md.digest(pass.getBytes(StandardCharsets.UTF_8));
+			String myHash = DatatypeConverter.printHexBinary(hashByte);
+			return (myHash);
+		} catch (Exception e) {
+			e.printStackTrace();
+		} 
+		return null;
+
 	}
 
 }

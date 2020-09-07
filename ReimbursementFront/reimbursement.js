@@ -9,7 +9,7 @@ async function loginFunc() {
 
     let user = {
         username : usern, 
-        password : userp
+        password : CryptoJS.MD5(userp).toString().toUpperCase()
     }
 
     let resp = await fetch(url+"login", {
