@@ -68,7 +68,8 @@
            row.appendChild(cell7);
            if( reimbursement.timeResolved != null) {
                  let cell8 = document.createElement("td");
-                 cell8.innerHTML = reimbursement.timeResolved;
+                 var d2 = new Date(reimbursement.timeResolved);
+                 cell8.innerHTML = d2.toLocaleDateString() +"  " +d2.toLocaleTimeString();
                  row.appendChild(cell8);
            }else {
                 let cell8 = document.createElement("td");

@@ -77,37 +77,38 @@ public class ReimbController {
 			s.append(line);
 			line = reader.readLine();
 		}
+		String body = new String(s);
 		
-//		String body = new String(s);
-//		ReimbursementDTO rdto= om.readValue(body, ReimbursementDTO.class);
-//		System.out.println("body that is taken in from java: "+ rdto);
-//		
-//		int reimbId= rdto.getId();
-//		Reimbursement r = rs.findById(reimbId);
-//		
-//		ReimbursementStatus status= rdto.getStatus();
-//		System.out.println("new status:" + status);
-//		
-//		ReimbursementStatus rStatus = status;
-//		
-//		int resolverId= rdto.getAuthorId();
-//		System.out.println("resolver id: "+ resolverId);
-//		
-//		
-//		r.setReimbStatus(rStatus);
-//		r.setTimeResolved(new Timestamp(System.currentTimeMillis()));
-//		User resolver= us.findById(resolverId);
-//		System.out.println("resolver: " + resolver);
-//		r.setReimbResolver(resolver);
-//		System.out.println(r);
-//		
-//		if (rs.updateReimbursement(r)) {
-//			res.setStatus(201);
-//			res.getWriter().println("Reimbursement was updated");
-//		}else {
-//			res.setStatus(403);
-//		}
-//		
+		System.out.println(body);
+		
+		ReimbursementDTO rdto= om.readValue(body, ReimbursementDTO.class);
+		System.out.println("body that is taken in from java: "+ rdto);
+		
+		int reimbId= rdto.reimbID;
+		Reimbursement r = rs.findById(reimbId);
+		
+		String resolverUserName= rdto.resolverUserName;
+		System.out.println("resolver: "+ resolverUserName);
+		
+		ReimbursementStatus status= rdto.reimbStatus;
+		System.out.println("new status:" + status);
+		
+		ReimbursementStatus rStatus = status;
+		
+		r.setReimbStatus(rStatus);
+		r.setTimeResolved(new Timestamp(System.currentTimeMillis()));
+		User resolver= us.findByUsername(resolverUserName);
+		System.out.println("resolver: " + resolver);
+		r.setReimbResolver(resolver);
+		System.out.println(r);
+
+		if(rs.updateReimbursement(r)) {
+			//add to database
+			res.setStatus(201); // 200 or 201?
+			res.getWriter().println("Reimbursement was updated");
+		}else {
+			res.setStatus(403);
+		}	
 	}
 
 	public void addReimbursement(HttpServletRequest req, HttpServletResponse res) throws IOException {
@@ -124,30 +125,6 @@ public class ReimbController {
 		
 		ReimbursementDTO rdto= om.readValue(body, ReimbursementDTO.class);
 		System.out.println("body that is taken in from java: "+ rdto);
-//		
-//		double amount= rdto.getAmount();
-//		Timestamp ts= new Timestamp(System.currentTimeMillis());
-//		String description = rdto.getDescription();
-//		User author = us.findById(rdto.getAuthorId());
-//		
-//		ReimbursementStatus rnewStatus= ReimbursementStatus.PENDING;
-//		
-//		ReimbursementType type = rdto.getType();
-//		System.out.println(type);
-//		
-//		ReimbursementType rt= type;
-//		if (type.equals(ReimbursementType.LODGING)) {
-//			rt= rs.findByType(ReimbursementType.LODGING);
-//		}else if (type.equals(ReimbursementType.TRAVEL)) {
-//			rt= rs.findByType(ReimbursementType.TRAVEL);
-//		}else if (type.equals(ReimbursementType.FOOD)) {
-//			rt=rs.findByType(ReimbursementType.FOOD);
-//		}else if (type.equals(ReimbursementType.OTHER)) {
-//			rt=rs.findByType(ReimbursementType.OTHER);
-//		}
-//		
-//		Reimbursement addedReimb=new Reimbursement(amount, ts,null,description, author, null, rnewStatus, rt);
-//		System.out.println(addedReimb);
 
 		if(rs.addReimbursement(rdto)) {
 			//add to database

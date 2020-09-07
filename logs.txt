@@ -314,3 +314,53 @@
 2020-09-07 01:38:59 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
 2020-09-07 01:39:08 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
 2020-09-07 14:20:32 INFO  UserService:31 - Finding User with username: mom and password: -880905839
+2020-09-07 15:43:11 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 15:43:11 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 15:43:44 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=30.0, timeSubmitted=null, timeResolved=null, reimbDescription=mowed the lawn, authorUserName=livray, resolverUserName=null, reimbStatus=null, reimbType=OTHER]
+2020-09-07 15:43:45 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 15:44:00 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 15:44:00 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 15:44:05 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 15:44:08 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 15:44:10 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 16:53:10 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 16:53:10 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 16:53:15 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 16:53:20 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 16:53:28 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 16:53:31 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 16:53:34 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 16:54:35 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 16:54:35 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 16:54:43 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 16:54:49 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 16:55:03 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 16:55:03 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 16:59:18 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 16:59:27 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 16:59:39 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 16:59:39 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:00:01 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 17:00:07 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:00:43 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:00:45 INFO  ReimbursementService:43 - Finding ReimbStatus with status: PENDING
+2020-09-07 17:00:57 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:00:57 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:03:03 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:03:10 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:03:10 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:03:15 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:03:15 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:03:21 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:05:53 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:05:53 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:06:24 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:06:24 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:08:53 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:08:53 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:09:03 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:09:03 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:12:18 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:12:18 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:12:31 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:12:31 INFO  ReimbursementDAO:26 - Retrieving all reimbursements

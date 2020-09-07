@@ -59,6 +59,13 @@ public class ReimbursementDTO {
 		this.reimbType = reimbType;
 	}
 
+	public ReimbursementDTO(int reimbID, String resolverUserName, ReimbursementStatus reimbStatus) {
+		super();
+		this.reimbID = reimbID;
+		this.resolverUserName = resolverUserName;
+		this.reimbStatus = reimbStatus;
+	}
+
 	@Override
 	public String toString() {
 		return "ReimbursementDTO [reimbID=" + reimbID + ", reimbAmount=" + reimbAmount + ", timeSubmitted="

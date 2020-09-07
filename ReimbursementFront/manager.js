@@ -13,6 +13,13 @@
  button2.innerText = "Find Reimbursements By Status";
  button2.onclick = filterFunc;
  document.getElementById("table-row").appendChild(button2);
+ //update status button
+ let button4 = document.createElement('button');
+ button4.className = "btn btn-success";
+ button4.id = "filterByStatusBtn";
+ button4.innerText = "Update Reimbursement Status";
+ button4.onclick = updateFunc;
+ document.getElementById("table-row").appendChild(button4);
  //logout button
  let button3 =  document.createElement("button");
  button3.className = "btn btn-success";
@@ -67,7 +74,8 @@
            row.appendChild(cell7);
            if( reimbursement.timeResolved != null) {
                  let cell8 = document.createElement("td");
-                 cell8.innerHTML = reimbursement.timeResolved;
+                 var d2 = new Date(reimbursement.timeResolved);
+                 cell8.innerHTML = d2.toLocaleDateString() +"  " +d2.toLocaleTimeString();
                  row.appendChild(cell8);
            }else {
                 let cell8 = document.createElement("td");
@@ -129,7 +137,8 @@ async function filterFunc() {
            row.appendChild(cell7);
            if( reimbursement.timeResolved != null) {
                  let cell8 = document.createElement("td");
-                 cell8.innerHTML = reimbursement.timeResolved;
+                 var d2 = new Date(reimbursement.timeResolved);
+                 cell8.innerHTML = d2.toLocaleDateString() +"  " +d2.toLocaleTimeString();
                  row.appendChild(cell8);
            }else {
                 let cell8 = document.createElement("td");
@@ -142,6 +151,29 @@ async function filterFunc() {
     }
 }
 
+async function updateFunc() {
+    let reimbStatus2 = document.getElementById("updateStatus").value;
+    let reimbStatus3 = document.getElementById("updateStatus1").value;
+    let reimbStatus4 = document.getElementById("resolverUserName").value;
+    let status = {
+        reimbID: reimbStatus3,
+        resolverUserName: reimbStatus4,
+        reimbStatus : reimbStatus2
+    }
+    document.getElementById("reimbbody").innerText ="";
+
+    let resp = await fetch(url+"updateStatus", {
+        method: 'POST',
+        body: JSON.stringify(status),
+        credentials: "include",
+    });
+    if (resp.status === 201) {
+        console.log(resp);
+       // location.reload();
+        document.getElementById("reimbbody").innerText = "";
+        findAllFunc();
+    }
+}
 async function logout() {
 
     let resp = await fetch(url + "logout", {

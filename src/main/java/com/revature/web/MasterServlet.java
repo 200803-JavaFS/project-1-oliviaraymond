@@ -53,7 +53,7 @@ public class MasterServlet extends HttpServlet {
 				if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
 					if (req.getMethod().equals("GET")) {
 						if (portions.length == 2) {
-							//didn't set program up correctly to use portions with userid, so did this
+							// didn't set program up correctly to use portions with userid, so did this
 							LoginDTO user = (LoginDTO) req.getSession().getAttribute("user");
 							rc.getReimbursement(res, user);
 						} else if (portions.length == 1) {
@@ -81,17 +81,20 @@ public class MasterServlet extends HttpServlet {
 				lc.logout(req, res);
 				break;
 			case "updateStatus":
+				System.out.println("in update status");
+				rc.updateStatus(req, res);
 				break;
 			case "filter":
 				if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
 					if (req.getMethod().equals("GET")) {
 						if (portions.length == 2) {
-							ReimbursementStatus status= ReimbursementStatus.valueOf(portions[1]);
+							ReimbursementStatus status = ReimbursementStatus.valueOf(portions[1]);
 							rc.getAllReimbursementsByStatus(res, status);
 						} else if (portions.length == 1) {
 							rc.getAllReimbursements(res);
 						}
-					}}
+					}
+				}
 				break;
 			}
 		} catch (NumberFormatException e) {

@@ -26,12 +26,31 @@
         </thead>
         <tbody id="reimbbody">
             <div class="col-4-sm">
-                <label class="label" for="filterStatus">Status</label>
+                <label class="label" for="filterStatus">Search for Reimbursements with Status</label>
                 <select name="filter" id="filterStatus" class="form-control"> 
                     <option value="PENDING">PENDING</option>
                     <option value="APPROVED">APPROVED</option>
                     <option value="DENIED">DENIED</option>
                 </select>
+            </div>
+            <h3>Approve/Deny a Reimbursement Request</h3>
+                <div class="row" id="formdiv">
+                    <div class="col-4-sm">
+                        <label class="label" for="updateStatus1">Reimbursement ID</label>
+                        <input type="number" class="form-contro;" id="updateStatus1">
+                    </div>
+            
+            <div class="col-4-sm">
+                <label class="label" for="updateStatus">Update Status to: </label>
+                <select name="filter" id="updateStatus" class="form-control"> 
+                    <option value="APPROVED">APPROVED</option>
+                    <option value="DENIED">DENIED</option>
+                </select>
+            </div>
+            <div class="col-4-sm">
+                <label class="label" for="resolverUserName">Your Username</label>
+                <input type="text" class="form-control" id="resolverUserName">
+            </div>
             </div>
         </tbody>
     </table>
