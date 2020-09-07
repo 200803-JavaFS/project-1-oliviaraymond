@@ -224,3 +224,35 @@
 2020-09-06 19:16:55 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=3.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=FOOD]
 2020-09-06 19:16:55 INFO  ReimbursementService:28 - Retrieving all reimbursements
 2020-09-06 19:16:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:20:00 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=3.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=FOOD]
+2020-09-06 19:20:01 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:20:01 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:22:42 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=3.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=mom, resolverUserName=null, reimbStatus=null, reimbType=TRAVEL]
+2020-09-06 19:22:43 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:22:43 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:25:13 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:25:13 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:25:15 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:25:15 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:25:29 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:25:29 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:25:35 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:25:35 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:27:12 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:27:12 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:31:07 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:31:07 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:31:55 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:31:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:31:57 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:31:57 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:32:05 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:32:05 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:32:40 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:32:40 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:33:12 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:33:12 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:33:15 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:33:15 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-06 19:33:23 INFO  ReimbursementService:28 - Retrieving all reimbursements
+2020-09-06 19:33:23 INFO  ReimbursementDAO:26 - Retrieving all reimbursements

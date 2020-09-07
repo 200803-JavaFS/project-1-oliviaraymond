@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.revature.controllers.LoginController;
 import com.revature.controllers.ReimbController;
+import com.revature.models.LoginDTO;
 import com.revature.models.Reimbursement.ReimbursementStatus;
 import com.revature.models.User;
 import com.revature.models.User.UserType;
@@ -21,7 +22,7 @@ public class MasterServlet extends HttpServlet{
 
 	private static ReimbController rc = new ReimbController();
 	private static	LoginController lc= new LoginController();
-//	private static UserService us = new UserService();
+	private static UserService us = new UserService();
 
 
 	
@@ -70,6 +71,12 @@ public class MasterServlet extends HttpServlet{
 			case "login":
 				System.out.println("In login");
 				lc.login(req, res);
+				break;
+			case "loggedIn":
+				if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
+					LoginDTO user = (LoginDTO) req.getSession().getAttribute("user");
+					lc.getUserRole(req, res, user);
+				}
 				break;
 			case "logout":
 				lc.logout(req, res);

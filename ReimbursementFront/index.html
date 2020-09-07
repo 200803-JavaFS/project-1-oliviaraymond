@@ -15,58 +15,6 @@
             <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
             <button id="loginbtn" class="btn btn-success">Login</button>
         </div>
-<br>
-<br>
-        <div class="row" id="table-row">
-            <table class="table-hover table-bordered" id="reimbtable">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Amount</th>
-						<th>Type</th>
-						<th>Status</th>
-						<th>Description</th>
-                        <th>Author</th>
-                        <th>Resolver</th>
-                        <th>Time Submitted</th>
-                        <th>Time Resolved</th>
-                    </tr>
-                </thead>
-                <tbody id="reimbbody">
-                </tbody>
-            </table>
-        </div>
-
-        <br>
-        <br>
-
-        <h3>Create a new Reimbursement</h3>
-        <div class="row" id="formdiv">
-            <div class="col-4-sm">
-                <label class="label" for="reimbAmount">Amount</label>
-                <input type="number" class="form-control" id="reimbAmount">
-            </div>
-            <div class="col-4-sm">
-                <label class="label" for="reimbType">Type</label>
-				<select name="reimbType" id="reimbType" class="form-control"> 
-					<option value="LODGING">LODGING</option>
-					<option value="TRAVEL">TRAVEL</option>
-					<option value="FOOD">FOOD</option>
-					<option value="OTHER">OTHER</option>
-				</select>
-			</div>
-			<div class="col-4-sm">
-                <label class="label" for="reimbDescription">Description</label>
-                <input type="text" class="form-control" id="reimbDescription">
-			</div>
-			<div class="col-4-sm">
-                <label class="label" for="authorUserName">Your Username</label>
-                <input type="text" class="form-control" id="authorUserName">
-			</div>
-        </div>
-        <div class="row" id="formbtn"></div>
-
-    </div>
     
     <script src="reimbursement.js"></script>
 </body>

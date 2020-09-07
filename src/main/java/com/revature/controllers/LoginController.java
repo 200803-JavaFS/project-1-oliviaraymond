@@ -58,6 +58,17 @@ public class LoginController {
 
 		}
 	}
+	public void getUserRole(HttpServletRequest req, HttpServletResponse res, LoginDTO user) throws IOException {
+		System.out.println("in method to send the usertype as a json object");		
+		if(user==null) {
+			res.setStatus(204);
+		}else {
+			String role = ls.getUserType(user).name();
+			res.setStatus(200);
+			String json = om.writeValueAsString(role);
+			res.getWriter().println(json);
+		}
+	}
 
 	public void logout(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		HttpSession ses = req.getSession(false);
