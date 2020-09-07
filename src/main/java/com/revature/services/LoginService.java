@@ -10,6 +10,7 @@ public class LoginService {
 
 	public boolean login(LoginDTO login) {
 
+
 		User u = udao.findByUsername(login.username);
 		return (u != null && login.password.equals((u.getPassword())));
 	}
@@ -21,6 +22,4 @@ public class LoginService {
 	}
 }
 
-//	public User getUser(String username) {
-//		return udao.findByUsername(username);
-//	}
+

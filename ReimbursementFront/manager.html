@@ -25,6 +25,14 @@
             </tr>
         </thead>
         <tbody id="reimbbody">
+            <div class="col-4-sm">
+                <label class="label" for="filterStatus">Status</label>
+                <select name="filter" id="filterStatus" class="form-control"> 
+                    <option value="PENDING">PENDING</option>
+                    <option value="APPROVED">APPROVED</option>
+                    <option value="DENIED">DENIED</option>
+                </select>
+            </div>
         </tbody>
     </table>
 </div>
@@ -32,7 +40,7 @@
 <br>
 <br>
 
-<h3>Create a new Reimbursement</h3>
+<!-- <h3>Create a new Reimbursement</h3>
 <div class="row" id="formdiv">
     <div class="col-4-sm">
         <label class="label" for="reimbAmount">Amount</label>
@@ -56,7 +64,7 @@
         <input type="text" class="form-control" id="authorUserName">
     </div>
 </div>
-<div class="row" id="formbtn"></div>
+<div class="row" id="formbtn"></div> -->
 
 </div>
 <script src="manager.js"></script>

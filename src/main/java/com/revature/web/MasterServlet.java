@@ -83,8 +83,16 @@ public class MasterServlet extends HttpServlet {
 			case "updateStatus":
 				break;
 			case "filter":
+				if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
+					if (req.getMethod().equals("GET")) {
+						if (portions.length == 2) {
+							ReimbursementStatus status= ReimbursementStatus.valueOf(portions[1]);
+							rc.getAllReimbursementsByStatus(res, status);
+						} else if (portions.length == 1) {
+							rc.getAllReimbursements(res);
+						}
+					}}
 				break;
-
 			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();

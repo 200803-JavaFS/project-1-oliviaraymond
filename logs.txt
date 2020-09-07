@@ -292,3 +292,15 @@
 2020-09-07 00:18:28 INFO  ReimbursementService:33 - Finding Reimbursement with id 8
 2020-09-07 00:27:15 INFO  ReimbursementService:33 - Finding Reimbursement with id 6
 2020-09-07 00:27:36 INFO  ReimbursementService:33 - Finding Reimbursement with id 6
+2020-09-07 00:39:33 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=6
+2020-09-07 00:39:58 INFO  ReimbursementService:48 - Adding reimbursement: ReimbursementDTO [reimbID=0, reimbAmount=4.0, timeSubmitted=null, timeResolved=null, reimbDescription=d, authorUserName=livray, resolverUserName=null, reimbStatus=null, reimbType=LODGING]
+2020-09-07 00:40:00 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=6
+2020-09-07 00:40:33 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=6
+2020-09-07 00:59:04 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 00:59:04 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:00:21 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:00:21 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:00:36 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:00:36 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 01:14:13 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 01:14:13 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
