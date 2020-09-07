@@ -27,6 +27,7 @@ async function loginFunc() {
     }
 }
 
+//sends user to correct page based on their type
 async function loggedIn() {
     let resp = await fetch(url + "loggedIn", {
         method: 'GET',
@@ -45,17 +46,5 @@ async function loggedIn() {
         }
     } else {
         document.getElementById("login-row").innerText = "Login failed.";
-    }
-}
-
-async function logout() {
-
-    let resp = await fetch(url + "logout", {
-        credentials: 'include',
-    });
-    if (resp.status === 200) {
-        console.log("logout");
-        window.location.href = "index.html";
-        document.getElementById("login-row").innerText = "You been logged out.";
     }
 }

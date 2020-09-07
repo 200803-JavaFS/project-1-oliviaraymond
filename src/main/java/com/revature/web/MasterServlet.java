@@ -17,18 +17,16 @@ import com.revature.models.User;
 import com.revature.models.User.UserType;
 import com.revature.services.UserService;
 
-
-public class MasterServlet extends HttpServlet{
+public class MasterServlet extends HttpServlet {
 
 	private static ReimbController rc = new ReimbController();
-	private static	LoginController lc= new LoginController();
+	private static LoginController lc = new LoginController();
 	private static UserService us = new UserService();
 
-
-	
 	public MasterServlet() {
 		super();
 	}
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		System.out.println("In servlet");
@@ -46,7 +44,7 @@ public class MasterServlet extends HttpServlet{
 		String[] portions = URI.split("/");
 
 		System.out.println(Arrays.toString(portions));
-		if(portions.length==0) {
+		if (portions.length == 0) {
 			req.getRequestDispatcher("index.html").forward(req, res);
 		}
 		try {
@@ -55,8 +53,9 @@ public class MasterServlet extends HttpServlet{
 				if (req.getSession(false) != null && (boolean) req.getSession().getAttribute("loggedin")) {
 					if (req.getMethod().equals("GET")) {
 						if (portions.length == 2) {
-							int id = Integer.parseInt(portions[1]);
-							rc.getReimbursement(res, id);
+							//didn't set program up correctly to use portions with userid, so did this
+							LoginDTO user = (LoginDTO) req.getSession().getAttribute("user");
+							rc.getReimbursement(res, user);
 						} else if (portions.length == 1) {
 							rc.getAllReimbursements(res);
 						}
@@ -81,8 +80,12 @@ public class MasterServlet extends HttpServlet{
 			case "logout":
 				lc.logout(req, res);
 				break;
-			}
+			case "updateStatus":
+				break;
+			case "filter":
+				break;
 
+			}
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 			res.getWriter().print("The id you provided is not an integer");
@@ -96,5 +99,4 @@ public class MasterServlet extends HttpServlet{
 		doGet(req, res);
 	}
 
-	
 }

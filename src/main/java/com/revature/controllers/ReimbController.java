@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.revature.models.LoginDTO;
 import com.revature.models.Reimbursement;
 import com.revature.models.Reimbursement.ReimbursementStatus;
 import com.revature.models.Reimbursement.ReimbursementType;
@@ -24,6 +25,18 @@ public class ReimbController {
 	private static UserService us= new UserService();
 
 	
+	public void getReimbursement(HttpServletResponse res, LoginDTO userDTO) throws IOException {
+		User user = rs.getUser(userDTO);
+		List<Reimbursement> reimb = rs.findByUser(user);
+		if(reimb == null) {
+			res.setStatus(204);
+		} else {
+			res.setStatus(200);
+			String json = om.writeValueAsString(reimb);
+			res.getWriter().println(json);
+		}
+		
+	}
 	public void getReimbursement(HttpServletResponse res, int id) throws IOException {
 		Reimbursement reimb = rs.findById(id);
 		if(reimb == null) {

@@ -4,4 +4,5 @@ public class LoginDTO {
 
 	public String username;
 	public String password; 
+	public int userId;
 }

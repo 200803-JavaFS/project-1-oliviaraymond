@@ -10,6 +10,7 @@ import com.revature.daos.IReimbursementDAO;
 import com.revature.daos.IUserDAO;
 import com.revature.daos.ReimbursementDAO;
 import com.revature.daos.UserDAO;
+import com.revature.models.LoginDTO;
 import com.revature.models.Reimbursement;
 import com.revature.models.Reimbursement.ReimbursementStatus;
 import com.revature.models.Reimbursement.ReimbursementType;
@@ -33,7 +34,6 @@ public class ReimbursementService {
 		log.info("Finding Reimbursement with id "+ id);
 		return rDao.findByReimID(id);
 	}	
-	
 	public List<Reimbursement> findByUser(User u) {
 		log.info("Retrieving all reimbursements tied to user with user_id="+ u.getUserId());
 		return rDao.findReimbursementsByUser(u);
@@ -63,6 +63,10 @@ public class ReimbursementService {
 	public boolean deleteReimbursement(int id) {
 		log.info("Deleting reimbursements: "+ id);
 		return rDao.deleteReimbursement(id);
+	}
+
+	public User getUser(LoginDTO userDTO) {
+		return uDao.findByUsername(userDTO.username);
 	}
 	
 }

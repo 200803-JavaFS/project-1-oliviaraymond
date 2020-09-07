@@ -1,16 +1,15 @@
-
- //get all reimbursements button
+ //get all of YOUR (current employee's) reimbursements button
  let button =  document.createElement("button");
  button.className = "btn btn-success";
  button.id = "findAllBtn";
- button.innerText = "All Reimbursements";
+ button.innerText = "My Reimbursement Tickets";
  button.onclick = findAllFunc;
  document.getElementById("table-row").appendChild(button);
  //add a reimbursement button
  let button2 = document.createElement('button');
  button2.className = "btn btn-success";
  button2.id = "addReimbBtn";
- button2.innerText = "Add Reimbursement";
+ button2.innerText = "Send Request";
  button2.onclick = AddFunc;
  document.getElementById("formbtn").appendChild(button2);
  //logout button
@@ -24,8 +23,10 @@
  async function findAllFunc() {
 
     document.getElementById("reimbbody").innerText ="";
+    // let userID = sessionStorage.getItem(userId);
 
-    let resp = await fetch(url+"reimbursement", {
+    // fix...
+    let resp = await fetch(url+"reimbursement/" + 1, {
         credentials: "include",
     });
 
