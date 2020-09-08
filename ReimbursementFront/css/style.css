@@ -42,13 +42,17 @@ html{
     margin-bottom: 2rem;
   }
 
-  input{
+  input, select{
     font-family:'Raleway', sans-serif;
     font-weight:400;
     font-size:1.8rem;
     color: #222;
     padding: 2rem;
     margin: 1rem;
+    margin-left: 10rem;
+    
+    
+   
   }
   #username{
       margin-right: 12rem;
@@ -68,6 +72,8 @@ html{
     font-size:1.8rem;
     color: #222;
     background-color: #F28482;
+    margin-left: 30rem;
+    margin-right:30rem;
   }
   #loginbtn{
     padding: 2rem;
@@ -121,4 +127,25 @@ html{
   }
   section:last-child{
       grid-row: 2;
+  }
+
+  section:first-child, section:nth-child(2) {
+    display:grid;
+    margin-bottom: 2rem;
+  }
+
+  section:last-child {
+    background-color: #F7EDE2;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  section:last-child p, section:last-child a {
+    padding-left: 10rem;
+  }
+
+  section:last-child h2 {
+    margin-right: 5rem;
+    margin-left: 5rem;
+    background-color: #84A59D;
   }
