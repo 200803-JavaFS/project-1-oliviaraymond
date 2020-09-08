@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reimbursement Application</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet2" href= "stylesheet.css">
-</head>
-<body>
-    <div class="container" id="fullcontainer">
-        <div class="row" id="login-row">
-            <h3 class="col-lg-12">Please Enter Your Username and Password:</h3>
-            <input class="col-sm-4 form-control" id="username" type="text" placeholder="USERNAME">
-            <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
-            <button id="loginbtn" class="btn btn-success">Login</button>
-        </div>
-    
-	<script src="js\reimbursement.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
-	
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reimbursement Application</title>
+	    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+	    <link rel="stylesheet" href= "css/style.css">
+    </head>
+    <header>
+        <h1>Reimbursement Application</h1>
+    </header>
+    <body>
+        <main>
+            <section>
+                <h2 class="col-lg-12">Please Enter Your Username and Password:</h2>
+                <article class="row" id="login-row">
+                   
+                    <input class="col-sm-4 form-control" id="username" type="text" placeholder="USERNAME">
+                    <input class="col-sm-4 form-control" id="password" type="password" placeholder="PASSWORD">
+                    <button id="loginbtn" class="btn btn-success">Login</button>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>Developed in Java, JavaScript, HTML5, CSS3 by Olivia Raymond for Revature Training.</p>
+        </footer>
+	    <script src="js\reimbursement.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/core.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    </body>
 </html>

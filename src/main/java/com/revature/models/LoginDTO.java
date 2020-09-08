@@ -8,10 +8,10 @@ public class LoginDTO {
 	public int userId;
 
 
-public LoginDTO(String username, String password) {
-	super();
-	this.username = username;
-	this.password = password;
-}
+//public LoginDTO(String username, String password) {
+//	super();
+//	this.username = username;
+//	this.password = password;
+//}
 
 }

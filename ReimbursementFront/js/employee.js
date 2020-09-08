@@ -18,7 +18,7 @@
  button3.id = "logoutBtn";
  button3.innerText = "Logout";
  button3.onclick = logout;
- document.getElementById("table-row").appendChild(button3);
+ document.getElementById("logout").appendChild(button3);
 
  async function findAllFunc() {
 

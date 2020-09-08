@@ -1,91 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reimbursement Application</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet2" href= "stylesheet.css">
-</head>
-<body>
-    <h2>Welcome, Financial Manager</h2>
-<div class="row" id="table-row">
-    <table class="table-hover table-bordered" id="reimbtable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Amount</th>
-                <th>Type</th>
-                <th>Status</th>
-                <th>Description</th>
-                <th>Author</th>
-                <th>Resolver</th>
-                <th>Time Submitted</th>
-                <th>Time Resolved</th>
-            </tr>
-        </thead>
-        <tbody id="reimbbody">
-            <div class="col-4-sm">
-                <label class="label" for="filterStatus">Search for Reimbursements with Status</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reimbursement Application</title>
+	    <link rel="stylesheet" href= "css\style.css">
+    </head>
+    <header>
+        <h1>Reimbursement Application</h1>
+    </header>
+    <body>
+        <main>
+            <h2 id="logout">Welcome, Financial Manager</h2>
+            <section class="row" id="table-row">
+                <table class="table-hover table-bordered" id="reimbtable">
+                   <div id="reimbtable2"></div>
+                  
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Amount</th>
+                            <th>Type</th>
+                            <th>Status</th>
+                            <th>Description</th>
+                            <th>Author</th>
+                            <th>Resolver</th>
+                            <th>Time Submitted</th>
+                            <th>Time Resolved</th>
+                        </tr>
+                    </thead>
+                    <tbody id="reimbbody">
+                    </tbody>
+                </table>
+            </section>
+            <section>
+            <article class="col-4-sm" id="filterStatus2">
+                <label class="label" for="filterStatus"></label>
                 <select name="filter" id="filterStatus" class="form-control"> 
                     <option value="PENDING">PENDING</option>
                     <option value="APPROVED">APPROVED</option>
                     <option value="DENIED">DENIED</option>
                 </select>
-            </div>
-            <h3>Approve/Deny a Reimbursement Request</h3>
+            </article>
+            <article id = "statuschange">
+ 
                 <div class="row" id="formdiv">
                     <div class="col-4-sm">
                         <label class="label" for="updateStatus1">Reimbursement ID</label>
                         <input type="number" class="form-contro;" id="updateStatus1">
                     </div>
+                </article>
             
-            <div class="col-4-sm">
-                <label class="label" for="updateStatus">Update Status to: </label>
+            <article class="col-4-sm">
+                <label class="label" for="updateStatus"></label>
                 <select name="filter" id="updateStatus" class="form-control"> 
                     <option value="APPROVED">APPROVED</option>
                     <option value="DENIED">DENIED</option>
                 </select>
-            </div>
-            <div class="col-4-sm">
+            </article>
+            <article class="col-4-sm" id ="resolverUserName2">
                 <label class="label" for="resolverUserName">Your Username</label>
                 <input type="text" class="form-control" id="resolverUserName">
-            </div>
-            </div>
-        </tbody>
-    </table>
-</div>
-
-<br>
-<br>
-
-<!-- <h3>Create a new Reimbursement</h3>
-<div class="row" id="formdiv">
-    <div class="col-4-sm">
-        <label class="label" for="reimbAmount">Amount</label>
-        <input type="number" class="form-control" id="reimbAmount">
-    </div>
-    <div class="col-4-sm">
-        <label class="label" for="reimbType">Type</label>
-        <select name="reimbType" id="reimbType" class="form-control"> 
-            <option value="LODGING">LODGING</option>
-            <option value="TRAVEL">TRAVEL</option>
-            <option value="FOOD">FOOD</option>
-            <option value="OTHER">OTHER</option>
-        </select>
-    </div>
-    <div class="col-4-sm">
-        <label class="label" for="reimbDescription">Description</label>
-        <input type="text" class="form-control" id="reimbDescription">
-    </div>
-    <div class="col-4-sm">
-        <label class="label" for="authorUserName">Your Username</label>
-        <input type="text" class="form-control" id="authorUserName">
-    </div>
-</div>
-<div class="row" id="formbtn"></div> -->
-
-</div>
+            </article>
+        </section>
+</main>
+<footer>
+    <p>Developed in Java, JavaScript, HTML5, CSS3 by Olivia Raymond for Revature Training.</p>
+</footer>
 <script src="js\manager.js"></script>
 <script src="js\reimbursement.js"></script>
 </body>

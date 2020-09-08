@@ -5,28 +5,28 @@
  button.id = "findAllBtn";
  button.innerText = "All Reimbursements";
  button.onclick = findAllFunc;
- document.getElementById("table-row").appendChild(button);
+ document.getElementById("reimbtable2").appendChild(button);
  //find by status button
  let button2 = document.createElement('button');
  button2.className = "btn btn-success";
  button2.id = "filterByStatusBtn";
  button2.innerText = "Find Reimbursements By Status";
  button2.onclick = filterFunc;
- document.getElementById("table-row").appendChild(button2);
+ document.getElementById("filterStatus2").appendChild(button2);
  //update status button
  let button4 = document.createElement('button');
  button4.className = "btn btn-success";
  button4.id = "filterByStatusBtn";
  button4.innerText = "Update Reimbursement Status";
  button4.onclick = updateFunc;
- document.getElementById("table-row").appendChild(button4);
+ document.getElementById("resolverUserName2").appendChild(button4);
  //logout button
  let button3 =  document.createElement("button");
  button3.className = "btn btn-success";
  button3.id = "logoutBtn";
  button3.innerText = "Logout";
  button3.onclick = logout;
- document.getElementById("table-row").appendChild(button3);
+ document.getElementById("logout").appendChild(button3);
 
  async function findAllFunc() {
 

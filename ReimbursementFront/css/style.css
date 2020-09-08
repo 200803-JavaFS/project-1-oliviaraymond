@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300|Raleway:300&display=swap');
+html{
+    font-size:10px;
+    max-width:96rem; /* Math to covert pixels to rem: 960 px / 10px = 96 rem */
+    margin: auto;
+  }
+
+  h1, h2{
+    font-family:'Lato', sans-serif;
+    font-weight:100;
+  }
+
+  h1{
+    text-align: center;
+    color:#F7EDE2;
+    font-size:7.2rem;
+    background-color:#F28482;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    background-color: #807F7F;
+    font-size: 4rem;
+    text-align: left;
+    padding-left: 3rem;
+    color:#F7EDE2;
+    margin: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  h3{
+    background-color: #807F7F;
+    font-size: 3rem;
+    text-align: left;
+    padding-left: 3rem;
+    color:#F7EDE2;
+    margin: 1rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  input{
+    font-family:'Raleway', sans-serif;
+    font-weight:400;
+    font-size:1.8rem;
+    color: #222;
+    padding: 2rem;
+    margin: 1rem;
+  }
+  #username{
+      margin-right: 12rem;
+
+  }
+
+  label{
+    font-family:'Raleway', sans-serif;
+    font-weight:400;
+    font-size:1.8rem;
+    color: #222;
+  }
+
+  button{
+    font-family:'Raleway', sans-serif;
+    font-weight:400;
+    font-size:1.8rem;
+    color: #222;
+    background-color: #F28482;
+  }
+  #loginbtn{
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  table{
+    background-color: rgb(243, 159, 198);
+    color: rgba(87, 78, 82, 0.925);
+    font-family:'Raleway', sans-serif;
+    font-weight:400;
+    font-size:1.8rem;
+    border: whitesmoke;
+  }
+  tbody{
+    background-color: rgb(245, 206, 224);
+
+  }
+  table, th, td {
+    border: 1px solid whitesmoke;
+  }
+
+  footer {
+    background-color:#F5CAC3;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    margin: 2rem;
+  }
+
+  footer p {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    color: #84A59D;
+  }
+
+  article{
+    text-align: center;
+    background-color: #F7EDE2;
+    padding-bottom: 0;
+    display: grid;
+  }
+  section{
+    width:85rem;
+    margin:auto;
+    display:grid;
+    margin-bottom: 2rem;
+  }
+  section:first-child{
+      grid-row: 1;
+  }
+  section:last-child{
+      grid-row: 2;
+  }

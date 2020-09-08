@@ -159,23 +159,23 @@ public class ServiceTest {
 	// add the rest of the methods in the service layer (reimb service and user
 	// service)
 
-	@Test
-	public void testLogin() {
-		System.out.println("In login...");
-		LoginDTO u = new LoginDTO("testUsername", "testPassword");
-		System.out.println(u);
-		boolean loginBool = ls.login(u);
-		assertTrue(loginBool);
-	}
+//	@Test
+//	public void testLogin() {
+//		System.out.println("In login...");
+//		LoginDTO u = new LoginDTO("testUsername", "testPassword");
+//		System.out.println(u);
+//		boolean loginBool = ls.login(u);
+//		assertTrue(loginBool);
+//	}
 	
-	@Test 
-	public void getUserType() {
-		LoginDTO u = new LoginDTO("testUsername", "testPassword");
-		System.out.println(u);
-		boolean loginBool = ls.login(u);
-		assertTrue(loginBool);
-		
-	}
+//	@Test 
+//	public void getUserType() {
+//		LoginDTO u = new LoginDTO("testUsername", "testPassword");
+//		System.out.println(u);
+//		boolean loginBool = ls.login(u);
+//		assertTrue(loginBool);
+//		
+//	}
 
 	@AfterClass
 	public static void shutdown() {
