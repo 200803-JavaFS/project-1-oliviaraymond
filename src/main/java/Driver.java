@@ -76,7 +76,7 @@ public class Driver {
 
 	public static void insertValues() {
 		
-	
+	//userDao.deleteUser(4);
 		
 //		User user1= new User("livray", hash("soccer"), "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
 //		User user2= new User("mom", hash("target"), "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);

@@ -441,3 +441,216 @@
 2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom
 2020-09-07 19:07:45 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
 2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:21 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:31:21 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:21 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:21 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:31:21 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 19:31:21 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:22 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:22 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:22 INFO  ReimbursementService:48 - Adding reimbursement: null
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:22 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 19:31:22 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 19:31:22 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:31:23 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 19:31:23 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:24 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:33 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:42:33 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:34 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:34 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 19:42:34 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:34 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:42:34 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 19:42:34 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  ReimbursementService:48 - Adding reimbursement: null
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 19:42:35 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:42:35 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 19:42:35 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:37 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:45 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:47:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:45 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 19:47:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:45 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:47:45 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:46 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:46 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:46 INFO  ReimbursementService:48 - Adding reimbursement: null
+2020-09-07 19:47:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:46 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 19:47:46 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 19:47:47 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:47:47 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 19:47:47 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:34 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:43 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:57:43 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:43 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:44 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 19:57:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:44 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:57:44 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 19:57:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:44 INFO  UserService:21 - Retrieving all users
+2020-09-07 19:57:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:44 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 19:57:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:45 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 19:57:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:45 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:57:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:57:46 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:06 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:15 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:58:15 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:15 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:15 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 19:58:15 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:15 INFO  UserService:26 - Finding User with id 4
+2020-09-07 19:58:16 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 19:58:16 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:16 INFO  UserService:21 - Retrieving all users
+2020-09-07 19:58:16 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:16 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 19:58:16 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:16 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 19:58:16 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:58:17 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:04 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:12 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:04:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:12 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 20:04:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:12 INFO  UserService:26 - Finding User with id 4
+2020-09-07 20:04:12 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 20:04:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:13 INFO  UserService:21 - Retrieving all users
+2020-09-07 20:04:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:13 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 20:04:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:13 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:04:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:13 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:04:14 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:05:22 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:31 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:05:31 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:31 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:31 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 20:05:32 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:32 INFO  UserService:26 - Finding User with id 4
+2020-09-07 20:05:32 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=4
+2020-09-07 20:05:32 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:32 INFO  UserService:21 - Retrieving all users
+2020-09-07 20:05:32 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:32 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 20:05:32 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:32 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:05:33 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:14 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:22 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:22 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:23 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:24 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:24 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:24 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:24 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:08:24 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:09:03 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:11 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:09:11 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:11 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:11 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 20:09:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:12 INFO  UserService:26 - Finding User with id 4
+2020-09-07 20:09:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:12 INFO  UserService:21 - Retrieving all users
+2020-09-07 20:09:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:12 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 20:09:12 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:09:13 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:53 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:10:54 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:54 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:54 INFO  ReimbursementService:60 - Finding Reimbs with types: OTHER
+2020-09-07 20:10:54 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:54 INFO  UserService:26 - Finding User with id 4
+2020-09-07 20:10:54 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:54 INFO  UserService:21 - Retrieving all users
+2020-09-07 20:10:54 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:50 - Retrieving all users with this role
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: testUsername
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:46 - Updating User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 20:10:55 INFO  UserService:36 - Finding User with username: mom

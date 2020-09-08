@@ -1,4 +1,5 @@
 package com.revature.services;
+
 import java.sql.Timestamp;
 import java.util.List;
 
@@ -7,6 +8,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+import com.revature.models.LoginDTO;
 import com.revature.models.Reimbursement;
 import com.revature.models.Reimbursement.ReimbursementStatus;
 import com.revature.models.Reimbursement.ReimbursementType;
@@ -33,10 +35,10 @@ public class ServiceTest {
 	public ServiceTest() {
 		super();
 	}
-	
+
 	@BeforeClass
 	public static void set() {
-		System.out.println("In Before Class");
+		System.out.println("In Before Class...");
 		ls = new LoginService();
 		us = new UserService();
 		rs = new ReimbursementService();
@@ -64,6 +66,30 @@ public class ServiceTest {
 	}
 
 	@Test
+	public void findAll() {
+		List<User> u = us.findAll();
+		assertNotNull(u);
+	}
+
+	@Test
+	public void updateUser() {
+		boolean b = us.updateUser(testUser);
+		assertTrue(b);
+	}
+
+	@Test
+	public void findByRole() {
+		User u = us.findByRole(UserType.EMPLOYEE);
+		assertNotNull(u);
+	}
+
+	@Test
+	public void deleteUser() {
+		boolean b = us.deleteUser(4);
+		assertTrue(b);
+	}
+
+	@Test
 	public void getReimbById() {
 		Reimbursement r = rs.findById(1);
 		System.out.println(r);
@@ -77,7 +103,7 @@ public class ServiceTest {
 	@Test
 	public void findUserById() {
 		System.out.println("In find by user ID");
-		User u = us.findById(15);
+		User u = us.findById(4);
 		System.out.println(u.getPassword());
 		User testAgainst = new User("testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com",
 				UserType.EMPLOYEE);
@@ -87,7 +113,7 @@ public class ServiceTest {
 	@Test
 	public void findUserByUsername() {
 		System.out.println("In find by username");
-		User u = us.findByUsername("henry");
+		User u = us.findByUsername("testUsername");
 		System.out.println(u.getPassword());
 		User testAgainst = new User(15, "henry", u.getPassword(), "Henry", "Raymond", "henhen@gmail.com",
 				UserType.FINANCIAL_MANAGER);
@@ -105,7 +131,7 @@ public class ServiceTest {
 
 	@Test
 	public void findReimbByUser() {
-		User u = us.findById(15);
+		User u = us.findById(testUser.getUserId());
 		List<Reimbursement> rList = rs.findByUser(u);
 		assertTrue(rList != null);
 	}
@@ -119,33 +145,42 @@ public class ServiceTest {
 	@Test
 	public void findReimbByStatus() {
 		List<Reimbursement> rListStatus = rs.findByStatus(ReimbursementStatus.APPROVED);
-		 assertNotNull(rListStatus);
+		assertNotNull(rListStatus);
 	}
-	
+
 	@Test
 	public void findReimbByType() {
-		List<Reimbursement> rListType = rs.findByType(ReimbursementType.TRAVEL);
-		 assertNotNull(rListType);
-		 //thats going to be null when there arent any travel types... how to do this better?
+		List<Reimbursement> rListType = rs.findByType(ReimbursementType.OTHER);
+		assertNotNull(rListType);
+		// thats going to be null when there arent any travel types... how to do this
+		// better?
+	}
+
+	// add the rest of the methods in the service layer (reimb service and user
+	// service)
+
+	@Test
+	public void testLogin() {
+		System.out.println("In login...");
+		LoginDTO u = new LoginDTO("testUsername", "testPassword");
+		System.out.println(u);
+		boolean loginBool = ls.login(u);
+		assertTrue(loginBool);
 	}
 	
-	//add the rest of the methods in the service layer (reimb service and user service)
-	
-
-//		@Test
-//		public void testLogin() {
-//			System.out.println("in login");
-//			User u = new User("testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com",
-//					UserType.EMPLOYEE);
-//			System.out.println(u);
-//			boolean loginBool = ls.login(u);
-//			assertTrue(loginBool);
-//		}
+	@Test 
+	public void getUserType() {
+		LoginDTO u = new LoginDTO("testUsername", "testPassword");
+		System.out.println(u);
+		boolean loginBool = ls.login(u);
+		assertTrue(loginBool);
+		
+	}
 
 	@AfterClass
 	public static void shutdown() {
 		testUser = null;
-		testReimb = null;
+		testReimb2 = null;
 		ls = null;
 		us = null;
 		rs = null;
