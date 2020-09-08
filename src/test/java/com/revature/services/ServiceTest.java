@@ -17,7 +17,7 @@ import com.revature.services.LoginService;
 import com.revature.services.ReimbursementService;
 import com.revature.services.UserService;
 
-//how to figure out test coverage? when to use the different asserts?
+//how to figure out test coverage of just service? when to use the different asserts?
 
 public class ServiceTest {
 
@@ -96,7 +96,7 @@ public class ServiceTest {
 
 	public void findUserByCredentials() {
 		System.out.println("In find by credentials");
-		User u = us.findByUserPassword("kc2009", "bestie");
+		User u = us.findByUserPassword("testUsername", "testPassword");
 		System.out.println(u.getPassword());
 		User testAgainst = new User("testUsername", "testPassword", "testFirstName", "testLastName", "test@test.com",
 				UserType.EMPLOYEE);

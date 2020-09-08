@@ -417,3 +417,27 @@
 2020-09-07 17:36:55 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
 2020-09-07 17:37:00 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
 2020-09-07 17:37:08 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 17:44:26 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 17:44:26 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 17:44:32 INFO  ReimbursementService:43 - Finding ReimbStatus with status: DENIED
+2020-09-07 17:44:41 INFO  ReimbursementService:38 - Retrieving all reimbursements tied to user with user_id=1
+2020-09-07 19:07:33 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:43 INFO  UserService:41 - Adding User: User [userId=0, username=testUsername, password=testPassword, firstName=testFirstName, lastName=testLastName, email=test@test.com, userType=EMPLOYEE]
+2020-09-07 19:07:43 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:43 INFO  ReimbursementService:60 - Finding Reimbs with types: TRAVEL
+2020-09-07 19:07:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:44 INFO  UserService:26 - Finding User with id 15
+2020-09-07 19:07:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:44 INFO  UserService:36 - Finding User with username: henry
+2020-09-07 19:07:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:44 INFO  UserService:26 - Finding User with id 15
+2020-09-07 19:07:44 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:44 INFO  ReimbursementService:43 - Finding ReimbStatus with status: APPROVED
+2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:45 INFO  ReimbursementService:48 - Adding reimbursement: null
+2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:45 INFO  ReimbursementService:29 - Retrieving all reimbursements
+2020-09-07 19:07:45 INFO  ReimbursementDAO:26 - Retrieving all reimbursements
+2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom
+2020-09-07 19:07:45 INFO  ReimbursementService:34 - Finding Reimbursement with id 1
+2020-09-07 19:07:45 INFO  UserService:36 - Finding User with username: mom

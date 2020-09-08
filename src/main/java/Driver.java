@@ -78,10 +78,10 @@ public class Driver {
 		
 	
 		
-		User user1= new User("livray", hash("soccer"), "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
-		User user2= new User("mom", hash("target"), "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);
-		userDao.addUser(user1);
-		userDao.addUser(user2);
+//		User user1= new User("livray", hash("soccer"), "Olivia", "Raymond", "livray@gmail.com",UserType.EMPLOYEE);
+//		User user2= new User("mom", hash("target"), "Martha", "Ames", "ames@gmail.com", UserType.FINANCIAL_MANAGER);
+//		userDao.addUser(user1);
+//		userDao.addUser(user2);
 //				
 //		userDao.addUser(user1);
 //		userDao.addUser(user2);
@@ -93,8 +93,8 @@ public class Driver {
 //		userDao.updateUser(user1);
 //		
 //
-		User user3 = new User("dad", hash("google"), "Rob", "Raymond", "raymond@gmail.com", UserType.FINANCIAL_MANAGER);
-		userDao.addUser(user3);
+//		User user3 = new User("dad", hash("google"), "Rob", "Raymond", "raymond@gmail.com", UserType.FINANCIAL_MANAGER);
+//		userDao.addUser(user3);
 		// userDao.deleteUser(3);
 		// rDao.deleteReimbursement(1);
 		// System.out.println("deleting");
